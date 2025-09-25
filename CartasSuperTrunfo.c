@@ -4,12 +4,11 @@ int main () {
   
     int numcartas=0; 
     int populacao=0, pontosturisticos=0;
-    float PIB=0.0, area=0.0;
+    float PIB=0.0, area=0.0, media =0.0;
     char nomecidade[50]="", codigo[50]="", estado[50]="";
   
     // carta 1
     printf("Carta 1 \n");
-
     printf("Digite a quantidade de habitantes: ");
     scanf("%d", &populacao);
     
@@ -31,6 +30,15 @@ int main () {
     printf("Nome da cidade: ");
     scanf("%s", nomecidade); 
 
+
+    // Cálculo da Densidade Populacional
+    media = (float) (populacao + area ) / 2;
+   
+
+    // Cálculo do PIB per Capita
+    media = (float) (PIB + populacao ) / 2;
+
+
     // mostrar carta 1
     printf(" Carta 1\n");
     printf("Habitantes: %d\n", populacao);
@@ -40,6 +48,13 @@ int main () {
     printf("Estado: %s\n", estado);
     printf("Código da carta: %s\n", codigo);
     printf("Nome da cidade: %s\n", nomecidade);
+
+
+    //Exibição dos resultados dos cálculo da Densidade Populacional
+    printf("A Densidade Populacional é:  %.2f\n", media);
+
+    //Exibição dos resultados dos cálculos do PIB per Capita
+    printf("O PIB per Capital é:  %.2f\n", media);
 
 
     // carta 2
@@ -66,6 +81,14 @@ int main () {
     printf("Nome da cidade: ");
     scanf("%s", nomecidade); 
 
+    // Cálculo da Densidade Populacional
+    media = (float) (populacao + area ) / 2;
+   
+
+    // Cálculo do PIB per Capita
+    media = (float) (PIB + populacao ) / 2;
+    
+
     // mostrar carta 2
     printf("\n Carta 2 \n");
     printf("Habitantes: %d\n", populacao);
@@ -75,6 +98,13 @@ int main () {
     printf("Estado: %s\n", estado);
     printf("Código da carta: %s\n", codigo);
     printf("Nome da cidade: %s\n", nomecidade);
+  
+
+    //Exibição dos resultados dos cálculo da Densidade Populacional
+    printf("A Densidade Populacional é:  %.2f\n", media);
+
+    //Exibição dos resultados dos cálculos do PIB per Capita
+    printf("O PIB per Capital é:  %.2f\n", media);
 
     return 0;
 }
