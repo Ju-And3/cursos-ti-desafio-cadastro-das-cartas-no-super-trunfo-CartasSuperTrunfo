@@ -3,27 +3,38 @@
 int main() {
     int i;
 
-    // Simulação da Torre usando for
+    // Simulação da Torre 
     printf("Movimento da Torre (5 casas para a direita):\n");
-    for (i = 1; i <= 5; i++) {
-        printf("Casa %d: Direita\n", i);
+    for (i = 0; i < 5; i++) {
+        printf("Direita\n");
     }
 
-    // Simulação do Bispo usando while
+    // Simulação do Bispo 
     printf("\nMovimento do Bispo (5 casas na diagonal para cima e à direita):\n");
-    i = 1;
-    while (i <= 5) {
-        printf("Casa %d: Cima, Direita\n", i);
+    i = 0;
+    while (i < 5) {
+        printf("Cima, Direita\n");
         i++;
     }
 
-    // Simulação da Rainha usando do-while
+    // Simulação da Rainha
     printf("\nMovimento da Rainha (8 casas para a esquerda):\n");
-    i = 1;
+    i = 0;
     do {
-        printf("Casa %d: Esquerda\n", i);
+        printf("Esquerda\n");
         i++;
-    } while (i <= 8);
+    } while (i < 8);
+
+    // Simulação do Cavalo usando loops aninhados 
+    printf("\nMovimento do Cavalo (2 casas para baixo, 1 para esquerda):\n");
+    for (int j = 0; j < 2; j++) {
+        printf("Baixo\n");
+    }
+    int k = 0;
+    while (k < 1) {
+        printf("Esquerda\n");
+        k++;
+    }
 
     return 0;
 }
