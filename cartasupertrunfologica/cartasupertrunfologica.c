@@ -90,8 +90,7 @@ int main() {
     printf("PIB per capita: %.2f reais\n", pibpercapita2);
 
     // -------------------- Comparação de um atributo escolhido ------------------
-    // Atributo escolhido: População (maior valor vence)
-    printf("\nComparação de cartas (Atributo: População):\n");
+    printf("\nComparação de cartas: \n");
     printf("Carta 1 - %s (%s): %lu\n", nomecidade1, estado1, populacao1);
     printf("Carta 2 - %s (%s): %lu\n", nomecidade2, estado2, populacao2);
     if (populacao1 > populacao2) {
